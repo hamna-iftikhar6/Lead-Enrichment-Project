@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# Lead-Enrichment-Project
-=======
 # Lead Enrichment
 
 A Python project for lead enrichment using Streamlit, Requests, and BeautifulSoup.
@@ -16,4 +13,3 @@ poetry install
 ```bash
 poetry run streamlit run app.py
 ``` 
->>>>>>> master
