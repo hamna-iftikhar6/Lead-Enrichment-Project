@@ -1,0 +1,33 @@
+{
+  "lead_type": "Individual",
+  "max_leads": 1000,
+  "batch_size": 20,
+  "min_delay": 3,
+  "max_delay": 8,
+  "max_retries": 3,
+  "min_confidence": 0.7,
+  "handle_duplicates": true,
+  "validate_data": true,
+  "output_format": "CSV",
+  "include_original": true,
+  "create_summary": true,
+  "use_proxy": false,
+  "rotate_user_agents": true,
+  "maintain_sessions": true,
+  "continue_on_error": true,
+  "logging_level": "INFO",
+  "save_intermediate": true,
+  "sources": {
+    "FastPeopleSearch": {
+      "enabled": true,
+      "priority": 6,
+      "settings": {
+        "extract_phones": true,
+        "extract_emails": true,
+        "extract_age": true,
+        "extract_relatives": true,
+        "extract_addresses": true
+      }
+    }
+  }
+}

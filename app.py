@@ -114,6 +114,14 @@ def main():
     # Main content area - App Information and Instructions
     st.markdown("## 📋 How This App Works")
     
+    # Quick navigation
+    st.markdown("""
+    <div style="background-color: #e3f2fd; border-radius: 8px; padding: 15px; margin: 10px 0;">
+        <h4>🚀 Quick Start</h4>
+        <p><strong>Ready to upload your Farm Report?</strong> Navigate to the <strong>Upload & Inspect</strong> page in the sidebar to begin Phase 2.</p>
+    </div>
+    """, unsafe_allow_html=True)
+    
     # App Overview
     with st.expander("🎯 App Overview", expanded=True):
         st.markdown("""
@@ -131,13 +139,23 @@ def main():
     with st.expander("📁 What Files to Upload", expanded=True):
         st.markdown("""
         ### 📤 Supported File Formats:
-        - **CSV files only** (.csv extension)
+        - **CSV, Excel files** (.csv, .xlsx, .xls extensions)
         - Maximum file size: 50MB
         - Encoding: UTF-8 recommended
         
+        ### 📋 Farm Report Structure:
+        Your Farm Report should contain columns such as:
+        - **Borrower/Lender names** (borrower_name, lender_name)
+        - **Property addresses** (property_address, city, state)
+        - **Contact information** (phone, email)
+        - **Financial data** (loan_amount, property_value)
+        - **Property details** (property_type, square_footage)
+        
         ### ⚠️ Important Notes:
-        - Ensure column headers match exactly
-        - Company names should be complete and accurate
+        - Ensure column headers are clear and descriptive
+        - Phone numbers should be in consistent format
+        - Email addresses should be valid format
+        - Property addresses should be complete
         """)
     
     # Process Flow
