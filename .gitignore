@@ -150,3 +150,12 @@ temp/
 uploads/
 .env.local
 .env.production
+
+# Ignore Chrome profiles & caches
+src/scraping/chrome_profiles/
+
+# Ignore downloaded browser binaries & drivers
+src/scraping/chrome-win64/
+src/scraping/msedgedriver*
+src/scraping/chromedriver*
+src/scraping/*driver.exe
