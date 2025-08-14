@@ -159,3 +159,14 @@ src/scraping/chrome-win64/
 src/scraping/msedgedriver*
 src/scraping/chromedriver*
 src/scraping/*driver.exe
+
+# Browser profiles, extensions, caches
+src/scraping/profile/
+src/scraping/**/profile*/
+src/scraping/**/Default/
+src/scraping/chrome_profiles/
+src/scraping/chrome-win64/
+src/scraping/edgedriver_win64/
+src/scraping/msedgedriver*
+src/scraping/chromedriver*
+src/scraping/*driver.exe
